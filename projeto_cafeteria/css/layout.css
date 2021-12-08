@@ -1,0 +1,258 @@
+/* 
+
+	Arquivo CSS geral com estilos dos elementos de todas páginas 
+
+*/
+
+@import url('tabelas.css');
+@import url('graficos.css');
+@import url('mediaquery.css');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	font-size: 62.5%; /* equivalente a 10px */
+	font-family: 'Ubuntu', sans-serif;
+  background-image: url(../images/fundo2.png);
+}
+
+body {
+	background-color: #ffffff99;
+}
+
+h1 {
+	font-size: 2.5rem;
+  margin: 2rem 6rem;
+  font-family: 'Limelight', cursive;
+  color: #503030;
+  width: 100%;
+}
+
+h2 {
+	font-size: 2rem;
+  
+  margin: 2rem 6rem;
+  font-family: 'Limelight', cursive;
+  color: #703830;
+  width: 100%;
+}
+
+header {
+  background-color: #503030;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  margin: 0;
+}
+
+header h2 {
+	font-weight: 400;
+	font-family: 'Limelight', cursive;
+  margin: 2rem auto 0 auto;
+  color: white;
+  overflow-y: hidden;
+}
+
+header div{
+  margin: 0 auto;
+}
+
+section {
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  display: block;
+  float: left;
+  width: 20%;
+  min-height:100vh;
+  height: 100%;
+	margin: 0;
+  background: #906868;
+  background: linear-gradient(#906868 20%,#00000000 100%);
+  padding: 0.5rem;
+}
+
+nav div{
+  display: block;
+  float: left;
+  width: 20%;
+}
+
+nav ul {
+  display: block;
+  float: left;
+  width: 70%;
+  list-style-type: none;
+  padding: 0 1rem;
+}
+
+nav ul li {
+  list-style-type: none;
+  padding: 1rem 2rem;
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+nav a:hover {
+	background-color: white;
+  color: #b78338;
+}
+
+article {
+  float: left;
+  padding: 0 1rem;
+  width: 80%;
+  min-height: 100vh;
+  justify-content: center;
+  background-color: #ffffff99;
+  padding-left: 10%;
+}
+
+article p{
+  font-size: 1.5rem;
+  width: 80%;
+  text-align: justify;
+  line-height: 1.8rem;
+  text-indent: 5rem;
+}
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div,p{
+  padding: .1rem;
+  width: 80%;
+}
+
+input,select {
+	padding: 1rem;
+  font-size: 1.5rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+[type="text"], [type="email"], textarea, label {
+	display: block;
+	width: 100%;
+}
+
+label{
+  margin: 1.5rem;
+	font-size: 1.6rem; 
+  color: #503030;
+  font-weight: 600;
+  display: block;
+  width: 100%;
+  margin-bottom: .5rem;
+}
+
+.inputi{
+  padding: .5rem;
+  margin: 0 0 .5rem 0;
+  border: solid 1px #ccc;
+  border-radius: 20px;
+  width: 100%;
+}
+
+p.inputi{
+  border: none;
+}
+
+#button{
+  background-color: #503030;
+  color: #f1f1f1;
+  border-radius: 20px;
+  padding: .5rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+footer {
+  background-color: #703830;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+@media(max-width:1000px){
+
+  html {
+    font-size: 40%;
+  }
+
+  nav{
+    width: 31%;
+}
+  nav a{
+  }
+
+  table td {
+    padding: .1rem;
+  }
+
+  article{
+    width: 69%;
+    padding:0 1rem;
+    margin: auto;
+  }
+
+  article p{
+    width: 100%;
+  }
+
+  .sotexto picture, .sotexto p, .direita picture, .direita p, .esquerda picture, .esquerda p{
+    width: 100%;
+} 
+  }
+
+@media (max-width: 600px) {
+  html {
+    font-size: 40%;
+  }
+
+  article {
+    width: 100%;
+    height: auto;
+    padding: auto;
+    margin: auto;
+  }
+
+  nav{
+    width: 100%;
+    min-height:15vh;
+    height: 150%;
+    background: #906868;
+    background: linear-gradient(#906868 70%,#00000000 100%);
+}
+
+  table td {
+    padding: .1rem;
+    font-size: 1rem;
+  }
+
+  #arabesco{
+    width: 50%;
+}
+
+  .sotexto picture, .sotexto p, .direita picture, .direita p, .esquerda picture, .esquerda p{
+    width: 100%;
+  
+} 
+}
+

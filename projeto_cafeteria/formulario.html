@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Contato</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- RESET -->
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
+
+	<!-- GOOGLE FONTS -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+
+	<!-- Estilos Personalizados -->
+	<link rel="stylesheet" type="text/css" href="./css/layout.css">
+</head>
+
+<body>
+
+	<header>
+		<div>
+			<img id="logo" src="./images/coffee.svg" alt="café ">
+		</div>
+		<h2>StarCoffee</h2>
+	</header>
+
+	<section>
+		<nav>
+			<ul>
+				<li><a href="./homepage.html">Home</a></li>
+				<li><a href="./artigo.html">Artigo</a></li>
+				<li><a href="./tabela.html">Números do negócio</a></li>
+				<li><a href="./panda.html">Promocional</a></li>
+			</ul>
+		</nav>
+
+		<article>
+
+			<h1>Contato</h1>
+			<p>Preencha os campos abaixo</p>
+
+			<form method="post">
+
+				<div>
+					<label for="nome">Nome</label>
+					<input class="inputi" type="text" name="nome" id="nome" placeholder="Digite seu nome">
+				</div>
+
+				<div>
+					<label for="email">E-mail</label>
+					<input class="inputi" type="email" name="email" id="email" placeholder="Digite seu email">
+				</div>
+
+				<div>
+					<label for="mensagem">Mensagem</label>
+					<textarea class="inputi" name="mensagem" id="mensagem" rows="5"></textarea>
+				</div>
+
+				<div>
+					<label>Qual linguagem você prefere?</label>
+					<p class="inputi"><input type="radio" name="linguagens" value="html"> HTML
+					<input type="radio" name="linguagens" value="css"> CSS
+					<input type="radio" name="linguagens" value="javascript"> JavaScript</p>
+				</div>
+
+				<div>
+					<label>Quais linguagens você sabe?</label>
+					<p class="inputi"><input type="checkbox" name="linguagens" value="html"> HTML
+					<input type="checkbox" name="linguagens" value="css"> CSS
+					<input type="checkbox" name="linguagens" value="javascript"> JavaScript</p>
+				</div>
+
+				<div>
+					<label>Qual a sua cor favorita?</label>
+					<select class="inputi">
+						<option value="Azul">Azul</option>
+						<option value="Verde">Verde</option>
+						<option value="Vermelho" selected>Amarelo</option>
+					</select>
+				</div>
+
+				<div id="direita">
+					<input id="button" type="submit">
+				</div>
+
+
+			</form>
+
+
+		</article>
+
+	</section>
+
+	<footer>
+		Desenvolvido por Débora
+	</footer>
+
+</body>
+
+</html>
